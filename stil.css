@@ -1,0 +1,153 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:'Roboto',sans-serif;
+}
+input:required {
+    box-shadow:none;
+}
+input:invalid{
+	box-shadow:none;
+}
+#ozadje{
+	background:url("ozadje.jpg");
+	width:1920px;
+	height:966px;
+}
+#glavni{
+	width:70%;
+	height:966px;
+	margin:0 auto;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background:rgba(2,2,3,0.4);
+}
+#potrdi{
+	padding-right:0px;
+	color:white;
+	font-size:27px;
+}
+#opomba{
+	position:absolute;
+	bottom:10px;
+	left:160px;
+	color:#a1a1a1;
+	font-size:18px;
+}
+#drzave{
+	position: relative;
+  display: block;
+  width:100%;
+  height:75px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #60666d;
+  border:none;
+  left:-5px;
+}
+#spol{
+	padding:10px 0;
+	font-size:20px;
+	position:relative;
+	color:rgb(105,105,105);
+}
+#zenski{
+	position:absolute;
+	left:80px;
+	top:13px;
+}
+#moski{
+	position:absolute;
+	left:460px;
+	top:14px;
+}
+#naslov{
+	color:white;
+	font-size:30px;
+	font-weight:600;
+	position:absolute;
+	top:30px;
+	left:205px;
+}
+form{
+	padding: 20px 0;
+	background:white;
+	box-shadow:0 1px 15px rgba(0,0,0,0.2);
+}
+.notranji{
+	width:100%;
+	max-width:635px;
+	background:#fff;
+	position:relative;
+	padding:90px 0;
+	box-shadow:0 1px 15px rgba(0,0,0,0.1);
+	border-radius:20px;
+	z-index:1;
+}
+.notranji::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:190px;
+	background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	z-index:-1;
+}
+.vnos{
+	width:90%;
+	margin:0 auto;
+	position:relative;
+	display:flex;
+	align-items:baseline;
+}
+input{
+	position:relative;
+	width:100%;
+	padding:20px 0;
+	margin-top:10px;
+	border:none;
+	outline:none;
+	font-size:20px;
+}
+input:focus + .crta::before{ /*podcrta input na klik -->*/
+	width:100%;
+}
+.crta{
+	position:absolute;
+	left:0;
+	bottom:0;
+	background:rgba(0,0,0,0.1);
+	width:100%;
+	height:1px;
+}
+.crta::before{ /*doloca lastnosti crte pod inputom, ko kliknemo*/
+	content:'';
+	position:absolute;
+	background:#09c6f9;
+	width:0px;
+	height:2px;
+	transition:width 650ms;
+}
+i{
+	padding-right:12px;
+	font-size:22px;
+	color:#09c6f9
+}
+button{
+	margin:25px auto;
+	padding:12px 280px;
+	background-color: #045de9;
+	background-image: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
+	border:none;
+	border-radius:25px;
+	color:white;
+	cursor:pointer;
+	transition: background-color 0.5s ease;
+}
+button:hover{
+	background-image: linear-gradient(115deg, #045de9 0%, #09c6f9 74%);
+}
